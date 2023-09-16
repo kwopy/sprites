@@ -2,7 +2,7 @@
 <html>
 	<head>
         <meta charset="utf-8">
-		<title>McHead – Minecraft skin avatar generator</title>
+		<title>Sprite Generator - HSW</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
 	</head>
 	
@@ -10,10 +10,9 @@
 <!-- Root element of the application -->
 <div class="main">
     <div class="options">
-        <h1>McHead</h1>
+        <h1>Sprite Generator</h1>
         
-        <p>Hello, there! This is a simple avatar generator based on a Minecraft skin.</p>
-        <p>Configure options below to get desirable result.</p>
+        <p>Configure options below to produce a sprite.</p>
         
         <h2>Options</h2>
         <p>
@@ -21,57 +20,29 @@
             <!--<br>or
             <input name="username" type="text" placeholder="from username..."> -->
         </p>
-        
-        <p>
-            <label>
-                <input name="head" type="checkbox" checked="checked"> Head Only
-            </label>
-        </p>
-        <p>
-            <label>
-                <input name="flat" type="checkbox" checked="checked"> Flat
-            </label>
-        </p>
-        <p>
-            <label>
-                <input name="outer" type="checkbox" checked="checked"> Include Hair
-            </label>
-        </p>
-        <p>
-            <label>
-                <input name="alex" type="checkbox"> Alex skin (3px arm)
-            </label>
-        </p>
-        <p><input name="y" type="number" value="45"> Yaw</p>
-        <p><input name="x" type="number" value="45"> Pitch</p>
+        <p><input name="y" type="number" value="0"> Yaw</p>
+        <p><input name="x" type="number" value="0"> Pitch</p>
         <p><button id="reset">Reset Rotation</button></p>
         
         <hr>
         
         <p>
-            When you're done, simply right click the output image, and choose 
+            When you're done, right click the output image, and choose 
             "Save Image as...," and save the image as <code>*.png</code> to 
             desired location.
         </p>
         
         <p>
-            Version <span id="version">-1</span>.
-            Created by <a href="http://github.com/mchorse/">McHorse</a>, hosted 
-            on <a href="http://github.com/mchorse/mchead/">github</a>.
+            Version <span id="version"></span>.
         </p>
     </div>
     
-    <div class="canvas">
-        <h2>Canvas</h2>
-    </div>
-    
-    <div class="output">
+<div class="output">
         <h2>Output</h2>
         <img id="output">
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
 <script src="app.js"></script>
 <script>
     /** McHead bootstrap application */
