@@ -1,23 +1,6 @@
 # McHead
 
-[McHead](http://mchorse.github.io/mchead/) is a simple web app that allows you to create avatars 
-from a texture of minecraft skin. This web app generates a render from given texture skin.
-
-![Screenshot](./examples/screenshot.png)
-
-McHead uses wonderful 3D library [ThreeJS](http://github.com/mrdoob/three.js/).
-
-## Examples
-
-Here's two full body renders created by McHead, one is flat, and one is 3D:
-
-![Full body](./examples/full.png)
-![Full 3D body](./examples/full_3d.png)
-
-And here's two head renders, one is flat, and one is 3D:
-
-![Head](./examples/head.png)
-![Head 3D](./examples/head_3d.png)
+Credit to [McHead](http://mchorse.github.io/mchead/). This web app generates a sprite when given a texture.
 
 ## License
 
